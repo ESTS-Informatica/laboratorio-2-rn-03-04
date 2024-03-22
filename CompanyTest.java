@@ -27,7 +27,27 @@ public class CompanyTest
         assertNotNull(company1.getSells());
     }
     
-
+    @Test
+    public void testRegisterClient(){
+        assertTrue(this.company1.registerClient(client1));
+        
+    }
+    
+    @Test
+    public void testRegisterClients(){
+        User client4 = new User("Alberta", "333333333", "alberta@gmail.com");
+        User client5 = new User("Alberte", "444444444", "alberte@gmail.com");
+    }
+    
+    @Test
+    public void testRegisterClientDuplicate(){
+        int tamanho = User.len;
+        for (int i=0; i<tamanho; i++){
+            assertEquals();
+        }
+        
+    }
+    
     /**
      * Sets up the test fixture.
      *
