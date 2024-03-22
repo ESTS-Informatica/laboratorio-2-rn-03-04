@@ -73,10 +73,10 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerClient(User client) {
-        if (this.client == null){
+        if (this.clients == null){
             return false;
         }
-        this.client = client;
+        this.clients = clients;
         return true;
         
     }
