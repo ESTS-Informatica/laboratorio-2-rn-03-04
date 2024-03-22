@@ -33,6 +33,12 @@ public class PropertyTest
         assertEquals(this.description, this.property1.getDescription());
     }
 
+    @Test
+    public void testToString(){
+        assertEquals("Descricao : " + this.description + "\nPreco : " + this.price, property1.toString());
+        
+    }
+    
     /**
      * Sets up the test fixture.
      *
@@ -42,6 +48,7 @@ public class PropertyTest
     public void setUp()
     {
         this.property1 = new Property(description, price);
+        
     }
 
     /**
