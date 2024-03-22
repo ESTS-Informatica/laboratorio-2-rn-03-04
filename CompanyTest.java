@@ -19,6 +19,13 @@ public class CompanyTest
     {
     }
     
+    @Test
+    public void testConstructor(){
+        assertNotNull(company1.getClients());
+        assertNotNull(company1.getSellers());
+        assertNotNull(company1.getProperties());
+        assertNotNull(company1.getSells());
+    }
     
 
     /**
